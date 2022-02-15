@@ -45,10 +45,13 @@ const testcomputerPlay = () => {
 
 // game function with playRound and computerPlay and first player who collects 5 points wins.
 
-const game = (playerSelection, computerSelection) => {
+
+const game = () => {
+    let computerSelection = computerPlay();
     let playerScore = 0;
     let computerScore = 0;
     for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt("Rock, Paper, or Scissors?");
         let result = playRound(playerSelection, computerSelection);
         if (result === "You win! Rock beats Scissors.") {
             playerScore++;
@@ -83,11 +86,8 @@ const game = (playerSelection, computerSelection) => {
     }
 }
 
-
 // Test game function.
 
-const testgame = () => {
-    let playerSelection = "Rock";
-    let computerSelection = computerPlay();
-    console.log(game(playerSelection, computerSelection));
+const testGame = () => {
+    console.log(game());
 }
