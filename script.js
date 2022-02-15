@@ -34,6 +34,7 @@ const playRound = (playerSelection, computerSelection) => {
     if (playerSelectionLower === "scissors" && computerSelectionLower === "rock") {
         return "You lose! Rock beats Scissors.";
     }
+}
 
 
 // Test computerPlay function.
@@ -80,4 +81,13 @@ const game = (playerSelection, computerSelection) => {
     else {
         return "It's a tie!";
     }
+}
+
+
+// Test game function.
+
+const testgame = () => {
+    let playerSelection = "Rock";
+    let computerSelection = computerPlay();
+    console.log(game(playerSelection, computerSelection));
 }
