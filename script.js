@@ -9,10 +9,6 @@ const computerPlay = () => {
 }
 
 
-
-
-
-
 const playRound = (playerSelection) => {
     const computerSelection = computerPlay();
     // if the player and computer select the same thing, it's a tie
