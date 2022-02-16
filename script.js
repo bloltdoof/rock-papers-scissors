@@ -53,7 +53,9 @@ const computerChoosed = document.getElementById("computer-choosed-item");
 // The computer randomly selects rock, paper, or scissors.
 // The winner is displayed.
 rock.addEventListener("click", () => {
+    
     const result = playRound("Rock");
+    const ends = gameEnd();
     playerChoosed.textContent = "You chose Rock";
     if (result === "You win!") {
         playerScore.innerHTML = parseInt(playerScore.innerHTML) + 1;
@@ -66,6 +68,7 @@ rock.addEventListener("click", () => {
 
 scissors.addEventListener("click", () => {
     const result = playRound("Scissors");
+    const ends = gameEnd();
     playerChoosed.textContent = "You chose Scissors";
     if (result === "You win!") {
         playerScore.innerHTML = parseInt(playerScore.innerHTML) + 1;
@@ -78,6 +81,7 @@ scissors.addEventListener("click", () => {
 
 paper.addEventListener("click", () => {
     const result = playRound("Paper");
+    const ends = gameEnd();
     playerChoosed.textContent = "You chose Paper";
     if (result === "You win!") {
         playerScore.innerHTML = parseInt(playerScore.innerHTML) + 1;
@@ -89,12 +93,20 @@ paper.addEventListener("click", () => {
 });
 
 // First to 5 wins
-// If the player or computer reaches 5 wins, the game ends.
+// If the player or computer reaches 5 wins, the game ends and it displays who won then reset the score.
 
 const gameEnd = () => {
-    if (playerScore.innerHTML === "5") {
+    if (parseInt(playerScore.innerHTML) === 5) {
+        playerScore.innerHTML = 0;
+        computerScore.innerHTML = 0;
+        playerChoosed.innerHTML = "";
+        computerChoosed.innerHTML = "";
         alert("You win!");
-    } else if (computerScore.innerHTML === "5") {
+    } else if (parseInt(computerScore.innerHTML) === 5) {
+        playerScore.innerHTML = 0;
+        computerScore.innerHTML = 0;
+        playerChoosed.innerHTML = "";
+        computerChoosed.innerHTML = "";
         alert("You lose!");
     }
-};
+}
