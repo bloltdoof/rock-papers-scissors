@@ -27,14 +27,14 @@
                     
                 </div>
                 <div class="rpc-container d-flex justify-content-evenly border rounded pd-2">
-                    <div class="rpc-item">
-                        <button class="rock btn btn-outline-dark btn-lg">Rock</button>
+                    <div class="rock">
+                        <button id="rock"class="rock btn btn-outline-dark btn-lg">Rock</button>
                     </div>
-                    <div class="rpc-item">
-                        <button class="paper btn btn-outline-dark btn-lg">Paper</button>
+                    <div class="paper">
+                        <button id="paper" class="paper btn btn-outline-dark btn-lg">Paper</button>
                     </div>
-                    <div class="rpc-item">
-                        <button class="scissors btn btn-outline-dark btn-lg">Scissors</button>
+                    <div class="scissors">
+                        <button id="scissors" class="scissors btn btn-outline-dark btn-lg">Scissors</button>
                     </div>
                 </div>
             </div>
@@ -47,8 +47,8 @@
                 <h2 class="player-title text-lg-center">Player</h2>
                 <div class="player-container">
                     <div class="player-item">
-                        <p class="player-score text-md-center">0</p>
-                        <div class="choosed-item text-md-center">Rock</div>
+                        <p id="player-score" class="player-score text-md-center">0</p>
+                        <div id="player-choosed-item" class="player-choosed-item text-md-center"></div>
                     </div>
                 </div>
             </div>
@@ -57,8 +57,8 @@
                 <h2 class="computer-title text-lg-center">Computer</h2>
                 <div class="computer-container">
                     <div class="computer-item">
-                        <p class="computer-score text-md-center">0</p>
-                        <div class="choosed-item text-md-center">Rock</div>
+                        <p id="computer-score" class="computer-score text-md-center">0</p>
+                        <div id="computer-choosed-item" class="choosed-item text-md-center"></div>
                     </div>
                 </div>
             </div>
@@ -68,10 +68,11 @@
 
 
 
-    <script src="script.js" defer></script>
+    
 
 
  
     
 </body>
+<script src="script.js" defer></script>
 </html>
