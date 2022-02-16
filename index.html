@@ -14,51 +14,51 @@
     <header class="header">
         <div class="container">
             <h1 class="row align-items-center justify-content-center p-4">Rock-Paper-Scissors</h1>
-            <p class="row align-items-center justify-content-center p-2">The winner is first to 5 points.</p>
+            <p class="row align-items-center justify-content-center">The winner is first to 5 points.</p>
         </div>
     </header>
 
-    <section class="game">
+    <section class="game p-4">
         <div class="container">
-            <div class="human">
-                <h2 class="human-title row align-items-center justify-content-center p-4">Human</h2>
-                <div class="human-container">
-                    <img src="img/human.png" class="human-img rounded mx-auto d-block" alt="human">
+            <div class="human pd-2">
+                <h2 class="human-title d-flex justify-content-evenly border p-4">Human</h2>
+                <div class="human-container p-4">
+                    <img src="img/human.png" class="human-img d-flex  aling-items-center justify-content-evenly border p-12 rounded-circle" alt="human">
                     
                 </div>
-                <div class="rpc-container row justify-content-evenly">
-                    <div class="rpc-item col-md-auto p-4">
-                        <button class="rock btn btn-dark btn-lg">Rock</button>
+                <div class="rpc-container d-flex justify-content-evenly border rounded pd-2">
+                    <div class="rpc-item">
+                        <button class="rock btn btn-outline-dark btn-lg">Rock</button>
                     </div>
-                    <div class="rpc-item col-md-auto p-4">
-                        <button class="paper btn btn-dark btn-lg">Paper</button>
+                    <div class="rpc-item">
+                        <button class="paper btn btn-outline-dark btn-lg">Paper</button>
                     </div>
-                    <div class="rpc-item col-md-auto p-4">
-                        <button class="scissors btn btn-dark btn-lg">Scissors</button>
+                    <div class="rpc-item">
+                        <button class="scissors btn btn-outline-dark btn-lg">Scissors</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="score">
-        <div class="container">
+    <section class="score p-4">
+        <div class="container d-flex justify-content-evenly border rounded">
             <div class="player">
-                <h2 class="player-title">Player</h2>
+                <h2 class="player-title text-lg-center">Player</h2>
                 <div class="player-container">
                     <div class="player-item">
-                        <p class="player-score">0</p>
-                        <div class="choosed-item">Rock</div>
+                        <p class="player-score text-md-center">0</p>
+                        <div class="choosed-item text-md-center">Rock</div>
                     </div>
                 </div>
             </div>
 
             <div class="computer">
-                <h2 class="computer-title">Computer</h2>
+                <h2 class="computer-title text-lg-center">Computer</h2>
                 <div class="computer-container">
                     <div class="computer-item">
-                        <p class="computer-score">0</p>
-                        <div class="choosed-item">Rock</div>
+                        <p class="computer-score text-md-center">0</p>
+                        <div class="choosed-item text-md-center">Rock</div>
                     </div>
                 </div>
             </div>
